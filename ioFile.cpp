@@ -7,7 +7,6 @@ int main()
 {
     string baris;
     ofstream outfile;
-
     outfile.open("contohfile.txt");
 
     cout << ">= Menulis file, \'q\' untuk keluar" << endl;
@@ -18,14 +17,15 @@ int main()
         getline(cin, baris);
         if (baris == "q")
             break;
-        outline << baris << endl;
+        outfile << baris << endl;
     }
     outfile.close();
-    if stream
-        infile;
+    ifstream infile;
     infile.open("contohfile.txt");
+
     cout << endl
          << ">= Membuka dan membaca file " << endl;
+
     if (infile.is_open())
     {
         while (getline(infile, baris))
@@ -34,4 +34,7 @@ int main()
         }
         infile.close();
     }
-}
+    else
+        cout << "Unable to open file";
+    return 0;
+};
