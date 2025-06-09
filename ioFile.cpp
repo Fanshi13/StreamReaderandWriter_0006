@@ -20,4 +20,11 @@ int main()
             break;
         outline << baris << endl;
     }
+    outfile.close();
+    if stream
+        infile;
+    infile.open("contohfile.txt");
+    cout << endl
+         << ">= Membuka dan membaca file " << endl;
+    if (infile.is_open())
 }
